@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS assignment</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        text-align: center;
+        padding-top: 100px;
+      }
+  
+      button {
+        padding: 12px 24px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+  
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+    <!-- Q7. Practice placement of <script></script> element in a.Head -->
+    <script>
+      alert("Page is loading...");
+    </script>
+</head>
+
+<body>
+  <!-- Q6. Make use of alerts in your new/existing HTML & CSS
+project. -->
+    <h1>Welcome to My Project</h1>
+    <p>Click the button to see an alert message:</p>
+
+    <button onclick="showGreeting()">Click Me</button>
+    <!-- Q7c. Body (inside your page’s HTML) -->
+    <script>
+        function showGreeting() {
+            alert("Hello! Here's my Q6.");
+        }
+    </script>
+    <!-- Q7b. Body (before your page’s HTML) -->
+    <script src="app.js">
+      alert("The End")
+    </script>
+</body>
+
+</html>
